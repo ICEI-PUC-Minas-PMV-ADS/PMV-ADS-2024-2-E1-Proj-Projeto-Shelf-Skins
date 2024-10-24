@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shelf Skins</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: hsl(0, 100%, 100%); /* Fundo branco */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 360px;
+      background-color: #fff; /* Fundo branco */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.808);
+    }
+
+    /* Barra de pesquisa */
+    .search-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .search-bar input {
+      width: 80%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    .profile-icon {
+      width: 40px;
+      height: 40px;
+      background-color: #800080; /* Cor roxa */
+      border-radius: 50%;
+    }
+    .ad {
+      display: flex;
+      justify-content: center; /* Centraliza horizontalmente */
+      align-items: center;     /* Centraliza verticalmente */
+    }
+
+    /* Estilos para anúncios */
+    .ad img {
+      width: 50%;
+      height: 100px;
+      object-fit: cover; /* A imagem vai se ajustar ao espaço sem distorcer */
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Barra de Pesquisa e Perfil -->
+    <div class="search-bar">
+      <input type="text" placeholder="Barra de pesquisa">
+      <div class="profile-icon"></div>
+    </div>
+    
+    <!-- Imagem corrigida -->
+    <div class="ad">
+      <img src="csgo.png" width="50px" height="100px" alt="CSGO Image">
+      <div class="ad-text">Skins Counter Strike</div>
+    </div>
+    
+    <div class="ad">
+      <img src="Zed.png" alt="ZED Image">
+    </div>
+
+    <div class="ad">
+        <img src="pubg.png" width="50px" height="100px" alt="CSGO Image">
+      </div>
+  </div>
+
+</body>
+</html>
