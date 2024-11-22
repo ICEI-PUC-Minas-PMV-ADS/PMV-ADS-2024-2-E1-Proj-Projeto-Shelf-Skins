@@ -1,0 +1,109 @@
+:root {
+    --cor-principal: #fff;
+    --cor-secundaria: #7b7bf8;
+    --cor-terciaria: #000000;
+    --cor-quaternaria: #6868ff6d;
+    --cor-hover: #6868ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.pix-payment-container {
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px var(--cor-quaternaria);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.qr-code-container img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    background-color: #e0e0e0;
+}
+
+.pix-key-container {
+    margin: 15px 0;
+}
+
+.pix-key-container input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container button {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    width: 12em;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: var(--cor-secundaria);
+    box-shadow: 5px 5px 1px var(--cor-quaternaria);
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    border-style:none;
+}
+
+.button-container button:hover {
+    cursor: pointer;
+    background-color: var(--cor-hover);
+}
+
+::placeholder {
+    color: var(--cor-secundaria);
+    opacity: 1;
+}
+.pix-key-container button {
+    text-align: center;
+    font-weight: bold;
+    width: 40%;
+    height: 2.5em;
+    font-size: 10px;
+    color: white;
+    background-color: var(--cor-secundaria);
+    box-shadow: 5px 5px 1px var(--cor-quaternaria);
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    border-style:none;
+}
+
+.pix-key-container button:hover{
+    cursor: pointer;
+    background-color: var(--cor-hover);
+}

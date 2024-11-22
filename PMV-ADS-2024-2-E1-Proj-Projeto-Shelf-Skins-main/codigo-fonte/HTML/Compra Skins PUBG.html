@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/codigo-fonte/images/icon.png">
+  <title>Skin Counter-Strike</title>
+  <style>
+    :root {
+      --cor-principal: #fff;
+      --cor-secundaria: #7b7bf8;
+      --cor-terciaria: #000000;
+      --cor-quaternaria: #6868ff6d;
+      --cor-hover: #6868ff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .navbar {
+      width: 100%;
+      background-color: #7254a8fb;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 500px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px var(--cor-secundaria);
+      margin-top: 20px;
+    }
+
+    .skin-item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .buy-button {
+      background-color: var(--cor-secundaria);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .buy-button:hover {
+      background-color: var(--cor-hover);
+    }
+
+    .back-button {
+      background-color: var(--cor-secundaria);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .back-button:hover {
+      background-color: var(--cor-hover);
+    }
+  </style>
+</head>
+
+<body>
+
+  <button onclick="window.location.href='Shelf Skins 2.html'" class="back-button">Voltar</button>
+
+  <div class="container">
+    <h2>Gold Plate - UMP (R$900,00)</h2>
+    <div class="skin-item">
+      <img src="../images/UMP.png" alt="CSGO Skin 1">
+    </div>
+
+    <p>PUBG</p>
+    <div class="button-container">
+      <button class="buy-button" onclick="window.location.href='Pagamento.html'">Comprar</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Doomsday Hoodie (R$500,00)</h2>
+    <div class="skin-item">
+      <img src="../images/Hoodie.png" alt="CSGO Skin 1">
+    </div>
+
+    <p>PUBG</p>
+    <div class="button-container">
+      <button class="buy-button" onclick="window.location.href='Pagamento.html'">Comprar</button>
+    </div>
+  </div>
+
+</body>
+
+</html>

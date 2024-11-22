@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/codigo-fonte/images/icon.png">
+    <title>Tela de Cadastro</title>
+    <style>
+        :root {
+            --cor-principal: #fff;
+            --cor-secundaria: #7b7bf8;
+            --cor-terciaria: #000000;
+            --cor-quaternaria: #6868ff6d;
+            --cor-hover: #6868ff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        label {
+            color: var(--cor-secundaria);
+            font-weight: bold;
+        }
+
+        input {
+            color: var(--cor-secundaria);
+            border: var(--cor-secundaria);
+            font-weight: bold;
+        }
+
+        .register-container img {
+            height: 20em;
+        }
+
+        .register-container {
+            background-color: rgb(255, 255, 255);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h2 {
+            color: var(--cor-secundaria);
+            font-weight: bold;
+            text-align: left;
+            margin: -50px 0 20px 0;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px -10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            border-color: var(--cor-secundaria);
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: var(--cor-secundaria);
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: var(--cor-hover)
+        }
+
+        ::placeholder {
+            color: var(--cor-secundaria);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="register-container">
+
+        <img width="300" height="180" src="../images/Logo-bg.png" alt="logo">
+
+        <h2>Criar Conta</h2>
+        <form action="#" method="post">
+
+            <label for="username">Nome de Usuário:</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+            <form action="#" method="post">
+
+                <label for="date">Data de Nascimento:</label>
+                <input id="date" type="date" name="date" placeholder="Digite sua data de nascimento" required>
+                <form action="#" method="post">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+
+                    <button type="button" id="register-btn" onclick="validarFormulario()">Cadastrar</button>
+                </form>
+    </div>
+
+    <script src="../JavaScript/cadastrar.js"></script>
+</body>
+
+</html>

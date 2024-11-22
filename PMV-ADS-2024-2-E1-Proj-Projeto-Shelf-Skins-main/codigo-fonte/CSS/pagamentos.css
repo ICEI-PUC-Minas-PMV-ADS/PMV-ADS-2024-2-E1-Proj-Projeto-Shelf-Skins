@@ -1,0 +1,84 @@
+:root {
+    --cor-principal: #fff;
+    --cor-secundaria: #7b7bf8;
+    --cor-terciaria: #000000;
+    --cor-quaternaria: #6868ff6d;
+    --cor-hover: #6868ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#div-payment-container {
+    background-color: #f0f0f0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#div-payment{
+    background-color: var(--cor-principal);
+    width: 50%;
+    height: 70%;
+    padding: 20px 0 100px 0px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px var(--cor-quaternaria);
+}
+
+#div-payment h1 {
+    color: var(--cor-secundaria);
+    margin-top: 30px;
+}
+
+#div-container-payment{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-payment-choice {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 100px;
+    width: 70%;
+    margin: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 1px var(--cor-quaternaria);
+}
+
+.button-payment-choice:hover{
+    cursor:pointer;
+    background-color: var(--cor-hover);
+}
+
+#return-button {
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    font-size: 1em;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#return-button:hover {
+    background-color: var(--cor-hover);
+}
+
+#return-button{
+    font-weight: bold;
+    box-shadow: 5px 5px 1px var(--cor-quaternaria);
+}

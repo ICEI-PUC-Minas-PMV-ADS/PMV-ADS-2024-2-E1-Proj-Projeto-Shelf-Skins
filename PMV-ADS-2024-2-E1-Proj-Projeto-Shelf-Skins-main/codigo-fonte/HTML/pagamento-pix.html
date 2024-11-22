@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/codigo-fonte/images/icon.png">
+    <title>Pagamento por PIX</title>
+    <link rel="stylesheet" href="../CSS/pix.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script> <!-- Adicionando a biblioteca QRious -->
+</head>
+<body>
+    <div class="pix-payment-container">
+        <h2>Pagamento via PIX</h2>
+        
+        <div class="qr-code-container">
+            <h3>Escaneie o QR Code</h3>
+            <canvas id="qr-code" width="200" height="200"></canvas> <!-- Canvas para o QR Code -->
+        </div>
+
+        <div class="pix-key-container">
+            <label for="pix-key">Ou copie a chave PIX abaixo:</label>
+            <input type="text" id="pix-key" value="123e4567-e89b-12d3-a456-426614174000" readonly>
+            <button onclick="copiarChavePix()">Copiar Chave PIX</button>
+        </div>
+        
+        <div class="button-container">
+            <button type="button" onclick="window.location.href='agradecimento.html'">Comprar</button>
+            <button type="button" onclick="window.location.href='Pagamento.html'">Voltar</button>
+        </div>
+    </div>
+
+    <script src="../JavaScript/pix-pagamento.js"></script>
